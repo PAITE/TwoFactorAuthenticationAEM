@@ -6,7 +6,7 @@ Introduction
 This is a very basic article on implementing two factor authentication.
 
 
-![alt tag](https://raw.githubusercontent.com/PAITE/TwoFactorAuthenticationAEM/master/Capture.png
+![alt tag](https://github.com/PAITE/TwoFactorAuthenticationAEM/blob/master/Capture.PNG)
 
 Usecase Bank transaction Scenario:
 --------
