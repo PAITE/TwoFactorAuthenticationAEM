@@ -1,30 +1,18 @@
-training
+Two Factor Authentication
 ========
 
-This a content package project generated using the multimodule-content-package-archetype.
+Introduction
+--------
+This is a very basic article on implementing two factor authentication.
 
-Building
+Usecase Bank transaction Scenario
 --------
 
-This project uses Maven for building. Common commands:
+1) Once user signs in , goes to transaction gateway, Enters OTP .After successful verification of OTP , he makes payment.
+2) If suppose user gets to access transaction gateway without signing in then our AuthFilter will check this and redirect it to sign in page 
+3) Similarly if he accesses OTP page , without signing ion then our AuthFilter will check this and redirect again to the sign in page.
+So any call to servlet /bin/makepayment  has to be verified by two factor authentication before the Servlet is called.
+This work is done by our AuthFilter.
 
-From the root directory, run ``mvn -PautoInstallPackage clean install`` to build the bundle and content package and install to a CQ instance.
-
-From the bundle directory, run ``mvn -PautoInstallBundle clean install`` to build *just* the bundle and install to a CQ instance.
-
-Using with VLT
---------------
-
-To use vlt with this project, first build and install the package to your local CQ instance as described above. Then cd to `content/src/main/content/jcr_root` and run
-
-    vlt --credentials admin:admin checkout -f ../META-INF/vault/filter.xml --force http://localhost:4502/crx
-
-Once the working copy is created, you can use the normal ``vlt up`` and ``vlt ci`` commands.
-
-Specifying CRX Host/Port
-------------------------
-
-The CRX host and port can be specified on the command line with:
-mvn -Dcrx.host=otherhost -Dcrx.port=5502 <goals>
 
 
