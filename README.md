@@ -3,7 +3,7 @@ Two Factor Authentication
 
 Introduction
 --------
-This is a very basic article on implementing two factor authentication.
+This is a very basic project on implementing two factor authentication.
 
 
 ![alt tag](https://github.com/PAITE/TwoFactorAuthenticationAEM/blob/master/Capture.PNG)
