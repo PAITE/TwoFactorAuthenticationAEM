@@ -5,7 +5,7 @@ Introduction
 --------
 This is a very basic article on implementing two factor authentication.
 
-Usecase Bank transaction Scenario
+Usecase Bank transaction Scenario:
 --------
 
 1) Once user signs in , goes to transaction gateway, Enters OTP .After successful verification of OTP , he makes payment.  <br />  
